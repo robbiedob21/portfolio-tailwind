@@ -26,7 +26,7 @@ export default function Homepage() {
               />
             </div>
           </div>
-          <img src={heroImg} className="hidden sm:block" />
+          <img src={heroImg} className="hidden sm:block" alt=""/>
         </div>
       </section>
       <section className="to-cognac-400 my-8 bg-gradient-to-r from-white from-50% to-50% md:pl-4">
