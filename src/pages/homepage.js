@@ -9,8 +9,8 @@ import teamworkProject from "../assets/teamwork-project-desktop.png";
 export default function Homepage() {
   return (
     <main>
-      <section className="my-8">
-        <div className="mx-auto grid max-w-screen-xl p-4 sm:grid-cols-2 sm:p-6">
+      <section className="my-12 px-4 sm:px-6">
+        <div className="mx-auto grid max-w-screen-xl items-center gap-8 md:grid-cols-2">
           <div className="grid place-items-center">
             <div className="grid items-center justify-items-center gap-4 sm:justify-items-start">
               <span className="text-balance text-center text-4xl font-bold tracking-tight sm:text-wrap sm:text-left sm:text-5xl lg:text-6xl">
@@ -26,19 +26,20 @@ export default function Homepage() {
               />
             </div>
           </div>
-          <img src={heroImg} className="hidden sm:block" alt=""/>
+          <img src={heroImg} className="hidden md:block" alt="" />
         </div>
       </section>
-      <section className="to-cognac-400 my-8 bg-gradient-to-r from-white from-50% to-50% md:pl-4">
-        <div className="bg-cognac-400 mx-auto max-w-screen-xl p-4 md:rounded-l-full">
-          <div className="flex flex-col place-items-center gap-4 md:flex-row">
+      <section className="my-12 bg-gradient-to-r from-white from-50% to-cognac-400 to-50% md:pl-6">
+        <div className="mx-auto max-w-screen-xl bg-cognac-400 p-8 md:rounded-l-full">
+          <div className="flex flex-col place-items-center gap-4 sm:gap-8 md:flex-row">
             <img
               src={headshot}
               alt=""
-              className="ring-cognac-700 ring-offset-cognac-400 aspect-square w-72 rounded-full object-cover shadow-lg ring ring-offset-2 md:h-96 md:w-96 md:min-w-fit"
+              className="aspect-square w-72 rounded-full object-cover shadow-lg ring ring-cognac-700 ring-offset-2 ring-offset-cognac-400 md:h-96 md:w-96 md:min-w-fit"
             />
-            <div className="flex max-w-prose flex-col justify-center gap-4 p-4">
-              <span className="text-4xl font-medium">About Me</span>
+            <div className="flex max-w-prose flex-col justify-center gap-4">
+              <h2 className="text-3xl font-medium sm:text-4xl">About Me</h2>
+              <hr className="w-24 border border-cognac-700"></hr>
               <p className="text-pretty text-xl font-bold">
                 I'm Robbie, a passionate web developer dedicated to helping
                 small businesses launch their online presence.
@@ -53,32 +54,32 @@ export default function Homepage() {
           </div>
         </div>
       </section>
-      <section className="my-8 ">
-        <div className="max-w-screen-xl p-4 grid gap-4 mx-auto">
-            <h2 className="text-4xl font-medium">Real World Projects</h2>
-            <div className=" grid gap-4 sm:grid-cols-2">
+      <section className="my-12 px-4 sm:px-6">
+        <div className="mx-auto grid max-w-screen-xl gap-4">
+          <h2 className="text-4xl font-medium">Real World Projects</h2>
+          <div className="grid gap-8 sm:grid-cols-2">
             <ProjectCard
-                image={teamworkProject}
-                title="Teamwork Scaffolding"
-                category="Business / Trade"
-                description="A simple 3 page website."
-                link="https://teamworkscaffolding.co.nz/"
+              image={teamworkProject}
+              title="Teamwork Scaffolding"
+              category="Business / Trade"
+              description="A simple 3 page website."
+              link="https://teamworkscaffolding.co.nz/"
             />
             <ProjectCard
-                image={teamworkProject}
-                title="Teamwork Scaffolding"
-                category="Business / Trade"
-                description="A simple 3 page website."
-                link="https://teamworkscaffolding.co.nz/"
-                />
-            </div>
-            <div className="text-center my-4">
-            <Button text="See More Projects" size="large" href="/projects"/>
-        </div>
+              image={teamworkProject}
+              title="Teamwork Scaffolding"
+              category="Business / Trade"
+              description="A simple 3 page website."
+              link="https://teamworkscaffolding.co.nz/"
+            />
+          </div>
+          <div className="my-4 text-center">
+            <Button text="See More Projects" size="large" href="/projects" />
+          </div>
         </div>
       </section>
-      <section className="from-cognac-400 my-8 bg-gradient-to-r from-50% to-white to-50% md:pr-4">
-        <div className="bg-cognac-400 mx-auto max-w-screen-xl p-4 md:rounded-r-full">
+      <section className="my-12 bg-gradient-to-r from-cognac-400 from-50% to-white to-50% md:pr-6">
+        <div className="mx-auto max-w-screen-xl bg-cognac-400 px-4 sm:px-6 py-8 md:rounded-r-full">
           <blockquote className="mx-auto grid max-w-prose gap-4 p-4">
             <span className="text-pretty text-2xl font-medium">
               “Robbie listened carefully to our needs and designed a website
@@ -91,13 +92,13 @@ export default function Homepage() {
           </blockquote>
         </div>
       </section>
-      <section className="my-4">
-        <div className="mx-auto grid max-w-screen-xl items-center gap-4 p-4 sm:grid-cols-2">
-          <img src={contactImg} alt="" className="hidden sm:block" />
+      <section className="my-12 px-4 sm:px-6">
+        <div className="mx-auto grid max-w-screen-xl items-center gap-8 md:grid-cols-2">
+          <img src={contactImg} alt="" className="hidden md:block" />
           <div className="grid gap-4">
-            <span className="text-4xl font-medium">
+            <h2 className="text-3xl font-medium sm:text-4xl">
               Let's chat about your project!
-            </span>
+            </h2>
             <ContactForm />
           </div>
         </div>
