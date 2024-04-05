@@ -1,15 +1,16 @@
 import Button from "../components/button";
-import heroImg from "../assets/hero-image.jpeg";
-import headshot from "../assets/headshot.jpg";
-import contactImg from "../assets/contact-image.jpeg";
+import heroImg from "../assets/hero-image.webp";
+import headshot from "../assets/headshot.webp";
+import contactImg from "../assets/contact-image.webp";
+import teamworkProject from "../assets/teamwork-scaffolding.webp";
+import faqAccordion from "../assets/faq-accordion.webp";
 import ContactForm from "../components/contact-form";
 import ProjectCard from "../components/project-card";
-import teamworkProject from "../assets/teamwork-project-desktop.png";
 
 export default function Homepage() {
   return (
-    <main>
-      <section className="my-12 px-4 sm:px-6">
+    <>
+      <section className="mb-16 mt-12 px-4 sm:px-6">
         <div className="mx-auto grid max-w-screen-xl items-center gap-8 md:grid-cols-2">
           <div className="grid place-items-center">
             <div className="grid items-center justify-items-center gap-4 sm:justify-items-start">
@@ -29,7 +30,7 @@ export default function Homepage() {
           <img src={heroImg} className="hidden md:block" alt="" />
         </div>
       </section>
-      <section className="my-12 bg-gradient-to-r from-white from-50% to-cognac-400 to-50% md:pl-6">
+      <section className="my-16 bg-gradient-to-r from-white from-50% to-cognac-400 to-50% md:pl-6">
         <div className="mx-auto max-w-screen-xl bg-cognac-400 p-8 md:rounded-l-full">
           <div className="flex flex-col place-items-center gap-4 sm:gap-8 md:flex-row">
             <img
@@ -38,8 +39,10 @@ export default function Homepage() {
               className="aspect-square w-72 rounded-full object-cover shadow-lg ring ring-cognac-700 ring-offset-2 ring-offset-cognac-400 md:h-96 md:w-96 md:min-w-fit"
             />
             <div className="flex max-w-prose flex-col justify-center gap-4">
-              <h2 className="text-3xl font-medium sm:text-4xl">About Me</h2>
-              <hr className="w-24 border border-cognac-700"></hr>
+              <div>
+                <h2 className="text-3xl font-medium sm:text-4xl">About Me</h2>
+                <hr className="my-2 w-24 border border-cognac-700"></hr>
+              </div>
               <p className="text-pretty text-xl font-bold">
                 I'm Robbie, a passionate web developer dedicated to helping
                 small businesses launch their online presence.
@@ -54,23 +57,26 @@ export default function Homepage() {
           </div>
         </div>
       </section>
-      <section className="my-12 px-4 sm:px-6">
+      <section className="my-16 px-4 sm:px-6">
         <div className="mx-auto grid max-w-screen-xl gap-4">
-          <h2 className="text-4xl font-medium">Real World Projects</h2>
+          <div>
+            <h2 className="text-4xl font-medium">Featured Projects</h2>
+            <hr className="my-2 w-24 border border-sage-400"></hr>
+          </div>
           <div className="grid gap-8 sm:grid-cols-2">
             <ProjectCard
               image={teamworkProject}
               title="Teamwork Scaffolding"
               category="Business / Trade"
-              description="A simple 3 page website."
+              description="A clean, 3-page website for this local scaffolding company, prioritizing clear service communication and easy contact."
               link="https://teamworkscaffolding.co.nz/"
             />
             <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
+              image={faqAccordion}
+              title="FAQ Accordion"
+              category="Demo"
+              description="Most website will likely need this sort of FAQ section"
+              link="https://robbiedob21-accordion.netlify.app/"
             />
           </div>
           <div className="my-4 text-center">
@@ -78,8 +84,8 @@ export default function Homepage() {
           </div>
         </div>
       </section>
-      <section className="my-12 bg-gradient-to-r from-cognac-400 from-50% to-white to-50% md:pr-6">
-        <div className="mx-auto max-w-screen-xl bg-cognac-400 px-4 sm:px-6 py-8 md:rounded-r-full">
+      <section className="my-16 bg-gradient-to-r from-cognac-400 from-50% to-white to-50% md:pr-6">
+        <div className="mx-auto max-w-screen-xl bg-cognac-400 px-4 py-8 sm:px-6 md:rounded-r-full">
           <blockquote className="mx-auto grid max-w-prose gap-4 p-4">
             <span className="text-pretty text-2xl font-medium">
               “Robbie listened carefully to our needs and designed a website
@@ -92,17 +98,20 @@ export default function Homepage() {
           </blockquote>
         </div>
       </section>
-      <section className="my-12 px-4 sm:px-6">
+      <section className="my-16 px-4 sm:px-6">
         <div className="mx-auto grid max-w-screen-xl items-center gap-8 md:grid-cols-2">
           <img src={contactImg} alt="" className="hidden md:block" />
           <div className="grid gap-4">
-            <h2 className="text-3xl font-medium sm:text-4xl">
-              Let's chat about your project!
-            </h2>
+            <div>
+              <h2 className="text-3xl font-medium sm:text-4xl">
+                Let's chat about your project!
+              </h2>
+              <hr className="my-2 w-24 border border-sage-400"></hr>
+            </div>
             <ContactForm />
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

@@ -1,5 +1,5 @@
-import portrait from "../assets/portrait.jpg";
-import landscape from "../assets/landscape.jpg";
+import portrait from "../assets/portrait.webp";
+import landscape from "../assets/landscape.webp";
 import Button from "../components/button";
 
 export default function AboutMe() {
@@ -7,10 +7,12 @@ export default function AboutMe() {
     <>
       <article className="my-8 px-4 sm:my-12 sm:px-6">
         <div className="mx-auto max-w-prose text-pretty leading-loose">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            About Me
-          </h1>
-          <hr className="my-4 w-24 border border-sage-400"></hr>
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              About Me
+            </h1>
+            <hr className="mt-2 mb-6 w-24 border border-sage-400"></hr>
+          </div>
           <img
             src={portrait}
             alt=""
@@ -22,7 +24,6 @@ export default function AboutMe() {
             professional web development scene, my enthusiasm and eagerness to
             learn are unmatched.
           </p>
-          
           <img
             src={landscape}
             alt=""

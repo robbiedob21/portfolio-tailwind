@@ -1,15 +1,17 @@
 import ContactForm from "../components/contact-form";
-import headshot from "../assets/headshot.jpg";
+import headshot from "../assets/headshot.webp";
 
 export default function ContactPage() {
   return (
     <>
       <section className="my-8 px-4 sm:my-12 sm:px-6">
         <div className="mx-auto max-w-screen-xl">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Contact
-          </h1>
-          <hr className="my-4 w-24 border border-sage-400"></hr>
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Contact
+            </h1>
+            <hr className="mb-6 mt-2 w-24 border border-sage-400"></hr>
+          </div>
           <div className="grid gap-8 md:grid-cols-2">
             <div>
               <div className="grid gap-4">
@@ -19,16 +21,16 @@ export default function ContactPage() {
                 <ContactForm />
               </div>
             </div>
-			<div className="flex flex-col items-center justify-center gap-6 order-first md:order-last">
-			<h2 className="text-2xl font-medium tracking-tight">
+            <div className="order-first flex flex-col items-center justify-center gap-6 md:order-last">
+              <h2 className="text-2xl font-medium tracking-tight">
                 Get in Touch
               </h2>
-			  <img
+              <img
                 src={headshot}
-                alt=""
-                className="aspect-square w-64 sm:w-72 rounded-full object-cover shadow-lg ring ring-cognac-700 ring-offset-2 ring-offset-cognac-400"
+                alt="Robbie"
+                className="aspect-square w-64 rounded-full object-cover shadow-lg ring ring-cognac-700 ring-offset-2 ring-offset-white sm:w-72"
               />
-        
+
               <div className="flex items-center gap-4">
                 <div className="h-8 w-8">
                   <svg
@@ -89,7 +91,7 @@ export default function ContactPage() {
                   </span>
                 </a>
               </div>
-			</div>
+            </div>
           </div>
         </div>
       </section>

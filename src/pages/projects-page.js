@@ -1,65 +1,70 @@
 import ProjectCard from "../components/project-card";
-import teamworkProject from "../assets/teamwork-project-desktop.png";
+import teamworkProject from "../assets/teamwork-scaffolding.webp";
+import socialLinks from "../assets/social-links.webp";
+import recipe from "../assets/recipe.webp";
+import faqAccordion from "../assets/faq-accordion.webp";
 
 export default function ProjectPage() {
   return (
-    <main>
+    <>
       <section className="my-8 px-4 sm:my-12 sm:px-6">
-        <div className="mx-auto grid max-w-screen-xl gap-4">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            My Projects
-          </h1>
-          <hr className="my-4 w-24 border border-sage-400"></hr>
-          <h2 className="text-2xl font-medium">Real World Projects</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
-            />
-            <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
-            />
-            <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
-            />
+        <div className="mx-auto grid max-w-screen-xl gap-6">
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              My Projects
+            </h1>
+            <hr className="mb-6 mt-2 w-24 border border-sage-400"></hr>
+            <p className="leading-relaxed">
+              Here, you'll find a diverse range of websites I've built,
+              encompassing both real-world client projects and personal demo
+              websites. These projects showcase my versatility in web
+              development and my dedication to crafting user-friendly websites
+              that cater to specific needs. Dive in and explore the variety of
+              websites I've brought to life, from functional business solutions
+              to creative explorations!
+            </p>
           </div>
-          <h2 className="text-2xl font-medium">Demo Projects</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
-            />
-            <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
-            />
-            <ProjectCard
-              image={teamworkProject}
-              title="Teamwork Scaffolding"
-              category="Business / Trade"
-              description="A simple 3 page website."
-              link="https://teamworkscaffolding.co.nz/"
-            />
+          <div className="">
+            <h2 className="mb-4 text-2xl font-medium">Real World Projects</h2>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <ProjectCard
+                image={teamworkProject}
+                title="Teamwork Scaffolding"
+                category="Business / Trade"
+                description="A simple 3 page website."
+                link="https://teamworkscaffolding.co.nz/"
+              />
+            </div>
+          </div>
+          <hr className="" />
+          <div>
+            <h2 className="mb-4 text-2xl font-medium">Demo Projects</h2>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <ProjectCard
+                image={socialLinks}
+                title="Social Links"
+                category="Demo"
+                description="In this small project, a social link-sharing profile was build for Jessica Randall."
+                link="https://robbiedob21-social-links.netlify.app/"
+              />
+              <ProjectCard
+                image={recipe}
+                title="Omelette Recipe Page"
+                category="Demo"
+                description="Building out a recipe card for an Omelette recipe."
+                link="https://robbiedob21-recipe.netlify.app/"
+              />
+              <ProjectCard
+                image={faqAccordion}
+                title="FAQ Accordion"
+                category="Demo"
+                description="Most website will likely need this sort of FAQ section"
+                link="https://robbiedob21-accordion.netlify.app/"
+              />
+            </div>
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
