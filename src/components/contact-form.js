@@ -4,7 +4,13 @@ export default function ContactForm() {
   return (
     <>
       <div className="grid gap-4">
-        <Form action="#" className="grid gap-2" name="contact" netlify>
+        <Form
+          action="#"
+          method="post"
+          className="grid gap-2"
+          name="contact"
+          data-netlify="true"
+        >
           <label htmlFor="name" className="text-dark">
             Name*
           </label>
