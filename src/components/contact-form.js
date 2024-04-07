@@ -1,4 +1,4 @@
-import { Form } from "react-router-dom";
+import { Form, useSearchParams } from "react-router-dom";
 
 export default function ContactForm() {
   return (
@@ -6,7 +6,6 @@ export default function ContactForm() {
       <div className="grid gap-4">
         <Form
           action="#"
-          method="post"
           className="grid gap-2"
           name="contact"
           data-netlify="true"
