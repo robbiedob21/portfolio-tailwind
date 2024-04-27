@@ -3,7 +3,6 @@ export default function ContactForm() {
     <>
       <div className="grid gap-4">
         <form
-          action="#"
           className="grid gap-2"
           name="contact"
           netlify
@@ -56,7 +55,7 @@ export default function ContactForm() {
             id="submit"
             type="submit"
             className="rounded-md border-2 border-transparent bg-sage-700 px-2 py-2 text-xl text-white hover:border-sage-700 hover:bg-sage-400 hover:text-dark active:bg-sage-500"
-          >Sumbit</button>
+          >Submit</button>
         </form>
       </div>
     </>

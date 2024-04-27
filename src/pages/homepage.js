@@ -76,7 +76,7 @@ export default function Homepage() {
               title="FAQ Accordion"
               category="Demo"
               description="Most website will likely need this sort of FAQ section"
-              link="https://robbiedob21-accordion.netlify.app/"
+              link="https://robbiekiwi-accordion.netlify.app/"
             />
           </div>
           <div className="my-4 text-center">

@@ -45,21 +45,21 @@ export default function ProjectPage() {
                 title="Social Links"
                 category="Demo"
                 description="In this small project, a social link-sharing profile was build for Jessica Randall."
-                link="https://robbiedob21-social-links.netlify.app/"
+                link="https://robbiekiwi-social-links.netlify.app/"
               />
               <ProjectCard
                 image={recipe}
                 title="Omelette Recipe Page"
                 category="Demo"
                 description="Building out a recipe card for an Omelette recipe."
-                link="https://robbiedob21-recipe.netlify.app/"
+                link="https://robbiekiwi-recipe.netlify.app/"
               />
               <ProjectCard
                 image={faqAccordion}
                 title="FAQ Accordion"
                 category="Demo"
                 description="Most website will likely need this sort of FAQ section"
-                link="https://robbiedob21-accordion.netlify.app/"
+                link="https://robbiekiwi-accordion.netlify.app/"
               />
             </div>
           </div>
