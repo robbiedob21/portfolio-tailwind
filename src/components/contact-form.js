@@ -4,11 +4,11 @@ export default function ContactForm() {
   return (
     <>
       <div className="grid gap-4">
-        <Form
+        <form
           action="#"
           className="grid gap-2"
           name="contact"
-          data-netlify="true"
+          netlify
         >
           <label htmlFor="name" className="text-dark">
             Name*
@@ -54,12 +54,12 @@ export default function ContactForm() {
             className="block w-full rounded-md border-gray-300 shadow-sm placeholder:opacity-50 focus:border-sage-400 focus:ring focus:ring-sage-400 focus:ring-opacity-50"
             required
           />
-          <input
+          <button
             id="submit"
             type="submit"
             className="rounded-md border-2 border-transparent bg-sage-700 px-2 py-2 text-xl text-white hover:border-sage-700 hover:bg-sage-400 hover:text-dark active:bg-sage-500"
-          />
-        </Form>
+          >Sumbit</button>
+        </form>
       </div>
     </>
   );
