@@ -33,7 +33,7 @@ export default function ContactForm() {
         <label htmlFor="name" className="text-dark">Name*</label>
         <input type="text" name="name" id="name" placeholder="Robbie" className="block w-full rounded-md border-gray-300 shadow-sm placeholder:opacity-50 focus:border-sage-400 focus:ring focus:ring-sage-400 focus:ring-opacity-50" required/>
         <label htmlFor="email" className="text-dark">Email*</label>
-        <input type="email" name="email" id="email" placeholder="johndoe@robbie.kiwi" className="block w-full rounded-md border-gray-300 shadow-sm placeholder:opacity-50 focus:border-sage-400 focus:ring focus:ring-sage-400 focus:ring-opacity-50" required/>
+        <input type="email" name="email" id="email" placeholder="robbie@email.co.nz" className="block w-full rounded-md border-gray-300 shadow-sm placeholder:opacity-50 focus:border-sage-400 focus:ring focus:ring-sage-400 focus:ring-opacity-50" required/>
         <label htmlFor="phone" className="text-dark">Phone*</label>
         <input type="tel" name="phone" id="phone" placeholder="02123456789" className="block w-full rounded-md border-gray-300 shadow-sm placeholder:opacity-50 focus:border-sage-400 focus:ring focus:ring-sage-400 focus:ring-opacity-50" required/>
         <label htmlFor="message" className="text-dark">Message*</label>
