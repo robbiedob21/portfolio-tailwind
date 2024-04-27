@@ -15,11 +15,11 @@ export default function ProjectPage() {
             </h1>
             <hr className="mb-6 mt-2 w-24 border border-sage-400"></hr>
             <p className="leading-relaxed">
-              Here, you'll find a diverse range of websites I've built,
+              Here, you'll find a wide range of websites I've built,
               encompassing both real-world client projects and personal demo
-              websites. These projects showcase my versatility in web
-              development and my dedication to crafting user-friendly websites
-              that cater to specific needs. Dive in and explore the variety of
+              websites. These projects showcase my know-how in web
+              development and my commitment to crafting user-friendly websites
+              that will suit your needs. Dive in and explore the variety of
               websites I've brought to life, from functional business solutions
               to creative explorations!
             </p>

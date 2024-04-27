@@ -19,7 +19,7 @@ export default function AboutMe() {
             className="float-right ml-4 hidden max-h-96 rounded-full object-cover shadow-lg ring ring-cognac-700 ring-offset-2 ring-offset-white sm:block"
           />
           <p className="my-4 text-lg font-semibold">
-            Hi there! I'm Robbie, a web developer with a burning passion for
+            Hi there! I'm Robbie, a web developer with a passion for
             helping small businesses thrive online. While I'm new to the
             professional web development scene, my enthusiasm and eagerness to
             learn are unmatched.
