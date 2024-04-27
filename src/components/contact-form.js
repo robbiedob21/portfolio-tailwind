@@ -1,5 +1,3 @@
-import { Form, useSearchParams } from "react-router-dom";
-
 export default function ContactForm() {
   return (
     <>
