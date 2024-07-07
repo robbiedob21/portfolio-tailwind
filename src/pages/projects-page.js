@@ -1,5 +1,6 @@
 import ProjectCard from "../components/project-card";
 import teamworkProject from "../assets/teamwork-scaffolding.webp";
+import forSal from "../assets/runningforsal.png";
 import socialLinks from "../assets/social-links.webp";
 import recipe from "../assets/recipe.webp";
 import faqAccordion from "../assets/faq-accordion.webp";
@@ -33,6 +34,13 @@ export default function ProjectPage() {
                 category="Business / Trade"
                 description="A simple 3 page website."
                 link="https://teamworkscaffolding.co.nz/"
+              />
+              <ProjectCard
+                image={forSal}
+                title="Running For Sal"
+                category="Influencer"
+                description="A simple 3 page website."
+                link="https://runningforsal.netlify.app/"
               />
             </div>
           </div>
