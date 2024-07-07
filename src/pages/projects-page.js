@@ -32,14 +32,14 @@ export default function ProjectPage() {
                 image={teamworkProject}
                 title="Teamwork Scaffolding"
                 category="Business / Trade"
-                description="A simple 3 page website."
+                description="A clean, 3-page website for this local scaffolding company, prioritizing clear service communication and easy contact."
                 link="https://teamworkscaffolding.co.nz/"
               />
               <ProjectCard
                 image={forSal}
                 title="Running For Sal"
                 category="Influencer"
-                description="A simple 3 page website."
+                description="A modern grid design with animations for a local runner who fundraises for mental health charities."
                 link="https://runningforsal.netlify.app/"
               />
             </div>

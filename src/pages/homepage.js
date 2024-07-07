@@ -3,7 +3,7 @@ import heroImg from "../assets/hero-image.webp";
 import headshot from "../assets/headshot.webp";
 import contactImg from "../assets/contact-image.webp";
 import teamworkProject from "../assets/teamwork-scaffolding.webp";
-import faqAccordion from "../assets/faq-accordion.webp";
+import forSal from "../assets/runningforsal.png";
 import ContactForm from "../components/contact-form";
 import ProjectCard from "../components/project-card";
 
@@ -72,12 +72,12 @@ export default function Homepage() {
               link="https://teamworkscaffolding.co.nz/"
             />
             <ProjectCard
-              image={faqAccordion}
-              title="FAQ Accordion"
-              category="Demo"
-              description="Most website will likely need this sort of FAQ section"
-              link="https://robbiekiwi-accordion.netlify.app/"
-            />
+                image={forSal}
+                title="Running For Sal"
+                category="Influencer"
+                description="A modern grid layout with animations for a local runner who fundraises for mental health charities."
+                link="https://runningforsal.netlify.app/"
+              />
           </div>
           <div className="my-4 text-center">
             <Button text="See More Projects" size="large" href="/projects" />
